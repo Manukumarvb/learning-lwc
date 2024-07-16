@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="Display Record in Read Only Mode lightning-Record-Form">
+        <lightning-record-view-form 
+        object-api-name="Account"   
+        record-id="0016D00000kSAHiQAO"
+        >
+        <div class="slds-grid slds-gutters ">
+            <div class="slds-col slds-size_6-of-12">
+                <lightning-output-field field-name="Name"></lightning-output-field>
+                <lightning-output-field field-name="Phone"></lightning-output-field>
+                <lightning-output-field field-name="Industry"></lightning-output-field>
+            </div>
+            <div class="slds-col slds-size_6-of-12">
+                <lightning-output-field field-name="AnnualRevenue"></lightning-output-field>
+                <lightning-output-field field-name="Type"></lightning-output-field>
+
+            </div>
+        </div>
+    
+    </lightning-record-view-form >   
+      </lightning-card>
+</template>

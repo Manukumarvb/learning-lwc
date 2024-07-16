@@ -1,0 +1,14 @@
+:host{
+    display: block;
+    font-size: 30px;
+    background-color: blue;
+    color:black;
+}
+
+:host(.blue){
+    display: block;
+    font-size: 50px;
+    background-color: rgb(236, 11, 11);
+   
+
+}

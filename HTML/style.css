@@ -1,0 +1,24 @@
+/* Element */
+/* div{
+    color:red;
+}
+/* ID */
+#username{
+    font-size: 30px;
+    color: aquamarine;
+}
+/* Class */
+.para{
+    border: 8px solid yellow;
+} *
+
+/* div{
+    padding: 16px;
+    border: 2px solid;
+    margin: 16px;
+} */
+.abc,.abcd{
+padding-bottom: 10px;
+border: 1px solid;
+margin: 16px;
+}

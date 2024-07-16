@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Shadow Dom</title>
+</head>
+<body>
+<div>
+    <p>Thanks for choosing this course</p>
+</div>
+<div id="host"></div>
+<script> const elem = document.querySelector('#host')
+        const shadowRoot = elem.attachShadow({mode:'open'})
+        shadowRoot.innerHTML='<p> I am Shadow DOM</p>'
+
+</script>
+
+</body>
+
+
+
+</html>

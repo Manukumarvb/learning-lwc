@@ -1,0 +1,29 @@
+<template>
+    <!-- Parent to Child Primitive Data-- use kabab case if your attribute has camel case hasValue in HTML will be is-valid kabab case -->
+ <c-p2c-alert-component 
+    message ="Hurray My Card Data" 
+    card-heading ="Parent to child primitive data communication"
+    is-valid>
+ </c-p2c-alert-component>   
+
+<!-- Parent to Child Complex Data-->
+ <div class="slds-var-m-bottom_medium"></div>
+ <c-p2c-carousel-component 
+ carousel-details ={CarouselData}>
+
+ </c-p2c-carousel-component>
+<!-- Parent to Child on Action of parent -->
+<div class="slds-var-m-bottom_medium"></div>
+<lightning-card title="Parent to child communication on Action" >
+    <div class="slds-var-m-around_small">
+        <lightning-input type="number" label="Enter Percentage" onkeyup ={changeHandler} value="percenatge">
+        </lightning-input>
+        <c-p2c-progress-component progress-value={percenatge}></c-p2c-progress-component>
+    </div>    
+</lightning-card>
+
+<!--Calling Child method from Parent-->
+<lightning-button variant="brand" label="Reset Handler"  
+onclick={handleClick} ></lightning-button>
+<c-p2c-slider-component></c-p2c-slider-component>
+</template>

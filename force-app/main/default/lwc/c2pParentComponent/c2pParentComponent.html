@@ -1,0 +1,13 @@
+<template>
+     <lightning-card title="Child to Parent Communication" onclose ={closeEvent} >
+        <div class="slds-var-m-around_large">
+            <lightning-button label="Show Model" onclick={clickHandler}></lightning-button>
+            <h1>{msg}</h1>
+            <template lwc:if={showModel}>
+                <c-c2p-model-component  ></c-c2p-model-component>
+                <!-- onclose={closeHandler} -->
+            </template>
+            
+        </div>
+     </lightning-card>
+</template>

@@ -1,0 +1,48 @@
+<template>
+    <lightning-card title="Create Record Using Record Form">
+        <lightning-record-form 
+           object-api-name={objectName}
+            fields={fieldList} 
+            onsuccess={successHandler}>
+          
+        </lightning-record-form>
+
+        toastEvent
+    </lightning-card>
+
+    <lightning-card title="Display Record Using lightning-Record-Form">
+        <lightning-record-form 
+        record-id="0016D00000kSAHiQAO"
+           object-api-name={objectName}
+            fields={fieldList} 
+        ></lightning-record-form>    
+        
+     
+      </lightning-card>
+      <lightning-card title="Display Record in Read Only Mode lightning-Record-Form">
+        <lightning-record-form 
+        record-id="0016D00000kSAHiQAO"
+           object-api-name={objectName}
+            fields={fieldList} 
+            mode="readonly"
+        ></lightning-record-form>   
+    </lightning-card>
+    <lightning-card title="Display Record in Read Only Mode lightning-Record-Form">
+      <lightning-record-form 
+      record-id="0016D00000kSAHiQAO"
+         object-api-name={objectName}
+          fields={fieldList} 
+          mode="edit"
+          columns="2"
+      ></lightning-record-form>   
+    </lightning-card>
+    <lightning-card title="Display Record in Read Only Mode lightning-Record-Form">
+        <lightning-record-form 
+        record-id={recordId}
+           object-api-name={objectApiName}
+           layout-type="Compact"
+            mode="edit"
+            columns="2"
+        ></lightning-record-form>   
+      </lightning-card>
+</template>

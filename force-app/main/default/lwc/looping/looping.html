@@ -1,0 +1,75 @@
+<template>
+    <lightning-card  title="For Each Loop">
+        <div class="slds-m-around_xxx-medium">
+     <template 
+     for:each={carList} 
+     for:item ="car">
+    
+     <ul key = {car} class="slds-has-dividers_around-space">
+        <li class="slds-item">One of the Top car brands in India {car} </li>
+        
+      </ul>
+    </template>
+  </div>
+    </lightning-card>  
+
+    <lightning-card  title="iterator loop1">
+      <div class = "slds-m-around_xxx-medium">
+    <template iterator:ceo={ceoList}>
+      <div key ={ceo.value.id} >
+        <ul class="slds-has-dividers_around-space">
+          <li class="slds-item">
+            <strong>{ceo.value.company}</strong>
+            {ceo.value.name}
+  
+        </li></ul>
+      </div>
+     
+
+
+    </template>
+   
+    
+    </div>
+   </lightning-card>  
+
+    <lightning-card  title="Iterator Loop">
+        <div class="slds-m-around_xxx-medium">
+     <template iterator:ceo={ceoList}>
+        <div key ={ceo.value.id}>
+          <ul  class="slds-has-dividers_around-space">
+           <template if:true ={ceo.first}> 
+            <div class = "slds-box slds-theme_shade">
+               <strong> list of company and there COE's</strong> 
+            </div>
+        </template>
+            <li class="slds-item"><strong> {ceo.value.company}</strong>
+                 {ceo.value.name}
+            </li>
+            <template if:true ={ceo.last}> 
+                <div class = "slds-box slds-theme_shade">
+                   <strong> Thanks for going through the  list</strong> 
+                </div>
+            </template>
+          </ul>
+        </div>
+        
+     
+    </template>
+  </div>
+    </lightning-card>  
+
+    <lightning-card  title="For Each Loop with array of object">
+        <div class="slds-m-around_xxx-medium">
+     <template 
+     for:each={ceoList} 
+     for:item ="ceol">
+    
+     <ul key = {ceol.id} class="slds-has-dividers_around-space">
+        <li class="slds-item">ceo's of top IT companies {ceol.name} {ceol.company}</li>
+        
+      </ul>
+    </template>
+  </div>
+    </lightning-card> 
+</template>

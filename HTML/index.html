@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+    <title> Shadow DOM</title>
+</head>
+<body>
+    <div>
+        <p> Thanks for choosing zero to Hero Course</p>
+    </div>
+    <div id ="host"></div>
+    <button onclick="fetchpTag()">Clicl Me</button>
+    <script>
+        const elem = document.querySelector(`#host`)
+        const shadowRoot = elem.attachShadow({mode:`open`})
+        shadowRoot.innerHTML = `<p>Iam Shadow DOM </p>`
+
+        function fetchpTag(){
+            let tags = document.querySelectorAll('p')
+            console.log(tags)
+        }
+    </script>
+</body>

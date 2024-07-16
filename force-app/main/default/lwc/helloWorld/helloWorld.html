@@ -1,0 +1,37 @@
+<template>
+    <!-- <div>Hello World {fullname}</div>
+     -->
+
+     
+
+    <lightning-card  title="Two Way Data Binding">
+        <div class="slds-m-around_xxx-small">
+     <lightning-input type="text" 
+        label="Enter Course Name " 
+        onkeyup={changeHandler}>
+     </lightning-input>
+  
+        <div> {fullname} is a course of {title}</div></div>
+    </lightning-card>  
+
+    <lightning-card  title="Track event demo">
+        <div class="slds-m-around_xxx-medium">
+            <lightning-input type="text" 
+                label="Enter City Name " 
+                onkeyup={trackHandler}>
+            </lightning-input>
+  
+        <div> {address.city} is the city I live India </div></div>
+    </lightning-card>  
+
+
+  
+    <lightning-card  title="Getter  demo">
+        <div class="slds-m-around_xxx-medium">
+           
+  
+        <div> The first user name {firstUser}</div>
+    <div> The product of {num1} and {num2} is {multiplyier}</div></div>
+    </lightning-card> 
+
+</template>
